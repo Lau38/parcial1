@@ -1,18 +1,18 @@
 
-const preferedColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+const colorPrefe = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 const slider = document.getElementById('slider');
 
-const setTheme = (theme) => {
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
+const setModo = (modo) => {
+    document.documentElement.setAttribute('data-theme', modo);
+    localStorage.setItem('theme', modo);
 }
 
 slider.addEventListener('click', ()  => {
-    let switchToTheme = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
-    setTheme(switchToTheme);
+    let queModotiene = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
+    setModo(queModotiene);
 });
 
-setTheme(localStorage.getItem('theme') || preferedColorScheme);
+setModo(localStorage.getItem('theme') || colorPrefe);
 
 
 
