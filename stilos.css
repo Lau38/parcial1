@@ -5,15 +5,15 @@
 }
 
 [data-theme="light"] {
-    --primary: #2a83d6;
-    --background: #fff;
-    --text: #e9833e;
+    --primary: #6a0684;
+    --background: #f1e8f2;
+    --text: #060606;
 }
 
 [data-theme="dark"] {
-    --primary: #e9833e;
-    --background: #000;
-    --text: #e9833e;
+    --primary: #6a0684;
+    --background: black;
+    --text: #f3eeeb;
 }
 
 body{
@@ -106,12 +106,12 @@ h2{
     padding-bottom: 10%;
     padding-top: 10%;
 }
+
 header{
     color: var(--text);
     background-color: var(--background);
     
 }
-
 
 .container{
     margin-top: 45%;
@@ -129,6 +129,7 @@ footer{
     border-radius: 20px ;
    
 }
+
 .switch input { 
     opacity: 0;
     width: 0;
@@ -145,7 +146,6 @@ footer{
     background-color: var(--background);
     -webkit-transition: .4s;
     transition: .4s;
-    
 }
 
 .switch {
