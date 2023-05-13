@@ -15,6 +15,11 @@ slider.addEventListener('click', ()  => {
 setModo(localStorage.getItem('theme') || colorPrefe);
 
 
+function irAlregister(){
+    location.href="register.html"
 
+}
 
-
+function irAlIndex(){
+    location.href="index.html"
+}
